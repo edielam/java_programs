@@ -1,0 +1,45 @@
+    static int f(int n){
+        int rev = 0;
+        if (n > 0) {
+            while (n > 0 ){
+                rev = (rev * 10) + (n % 10);
+                n /= 10;
+            }
+        } else {
+            while (n < 0 ){
+                rev = (rev * 10) + (n % 10);
+                n /= 10;
+        }
+    }
+    return(rev);
+    }
+
+    static int[] f(int[] first, int[] second){
+         if (first == null || second==null){
+             return null;
+         }
+         int[] result;
+         if (first.length > second.length){
+             result = new int[first.length];
+         } else 
+         result = new int[second.length]; 
+         int k = 0;
+         int [] result2;
+         for (int i: first){
+             for (int b: second){
+                 if (i == b){
+                     result[k] = i;
+                     k++;
+                 }
+             }
+         }
+         result2 = new int[k];
+         for (int h=0; h< result.length; h++){
+             if (result[h] != 0){
+                 result2[h] = result[h];
+             }
+         }
+         return (result2);
+     }
+
+     
