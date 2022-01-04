@@ -5,7 +5,7 @@ public class BinarySearch {
         int[] test = {1,4,5,6,8,9,12,14,16,17,18};
         int target = 16;
         int ans = bs(test,target);
-        System.out.println(test[ans]);
+        System.out.println(ans);
     }
     static int bs(int[] arr, int target){
         int start = 0;
