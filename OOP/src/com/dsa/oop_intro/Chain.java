@@ -26,8 +26,5 @@ public class Chain {
         System.out.println("Employee salary: GHS "+ salaryForYear);
     }
 
-    public static void main(String[] args) {
-        Chain employer1 = new Chain();
-        employer1.display();
-    }
 }
+
